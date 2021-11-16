@@ -16,6 +16,8 @@ function start() {
     })
     .then((data) => {
       data.forEach(showBulb);
+      document.querySelector(".preloader").style.display = "none";
+      document.querySelector("body").style.overflow = "auto";
     });
 }
 
