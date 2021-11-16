@@ -2,7 +2,7 @@
 
 :root {
   --font: "Poppins", sans-serif;
-  --bg-footer: #f6f6f6;
+  --bg-footer: #f8f8f8;
   --main-text-color: #3a3a3a;
   --nav-text-color: #5d6b82;
   --pantone: #3cdbc0;
@@ -110,7 +110,7 @@ header img {
   position: relative;
 }
 
-.menu_text a:before {
+.menu_text a::before {
   content: "";
   position: absolute;
   background-color: var(--nav-text-color);
@@ -238,18 +238,13 @@ header img {
 /* footer styling */
 
 footer.main_footer {
-  font-size: 16px;
   background-color: var(--bg-footer);
-  padding: 0 2rem;
+  padding: 0 4.5rem;
   font-family: var(--font);
   color: var(--main-text-color);
 }
 
 @media only screen and (max-width: 600px) {
-  footer.main_footer {
-    font-size: 16px;
-  }
-
   footer.main_footer {
     padding: 0 1rem;
   }
@@ -271,7 +266,7 @@ footer.main_footer {
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
   border-bottom: 1px solid #221f1f;
-  padding-left: 10vw;
+  padding-left: 18vw;
 }
 
 .footer_subscribe .form_subscribe {
@@ -287,7 +282,7 @@ footer.main_footer {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   .footer_subscribe {
     padding-left: 0;
   }
@@ -298,11 +293,10 @@ footer.main_footer {
 }
 
 .footer_subscribe .form_subscribe input[type="email"] {
-  /* color: #f2f2f2; */
-  font-size: 17px;
   font-family: var(--font);
   width: 100%;
   background-color: var(--bg-footer);
+  font-size: 16px;
 }
 
 .footer_subscribe .form_subscribe input[type="email"]::placeholder {
@@ -355,15 +349,20 @@ footer.main_footer {
 }
 
 .footer_general {
+  font-size: 13px;
   grid-column: 1 / span 2;
   grid-row: 3 / span 1;
   text-align: center;
 }
 
-.icon_SoMe,
+.icon_SoMe {
+  width: auto;
+  height: 1.8rem;
+}
+
 .icon_payment {
   width: auto;
-  height: 2rem;
+  height: 1.5rem;
 }
 
 footer.main_footer ul {
@@ -433,17 +432,16 @@ footer.main_footer a {
 
 /* modal footer */
 .modal_subscribe {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {

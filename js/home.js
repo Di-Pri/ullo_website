@@ -1,6 +1,5 @@
 window.addEventListener("load", start);
-let url =
-  "https://kea0209-5a57.restdb.io/rest/ullo-products?fetchchildren=true";
+let url = "https://kea0209-5a57.restdb.io/rest/ullo-products?fetchchildren=true";
 const options = {
   headers: {
     "x-apikey": "6082d28c28bf9b609975a5db",
@@ -15,9 +14,8 @@ function start() {
       }
       return response.json();
     })
-    .then((data) => data.forEach(showBulb))
-    .catch((e) => {
-      console.error("An error occured:", e.message);
+    .then((data) => {
+      data.forEach(showBulb);
     });
 }
 
@@ -31,32 +29,25 @@ function showBulb(bulb) {
   if (bulb.price_current == bulb.price_regular) {
     //console.log("not sale");
     productClone.querySelector(".sale").classList.add("hidden");
-    productClone.querySelector(".price_number").textContent =
-      bulb.price_current;
+    productClone.querySelector(".price_number").textContent = bulb.price_current;
   } else {
     //console.log("sale");
     productClone.querySelector(".sale_price").textContent = bulb.price_regular;
-    productClone.querySelector(".price_number").textContent =
-      bulb.price_current;
+    productClone.querySelector(".price_number").textContent = bulb.price_current;
   }
   productClone.querySelector("img").src = bulb.images[0].link;
   productClone.querySelector("img").alt = bulb.title;
-  productClone.querySelector(
-    ".product_link"
-  ).href = `individual_product.html?id=${bulb._id}`;
-  productClone.querySelector(
-    ".title_product_link"
-  ).href = `individual_product.html?id=${bulb._id}`;
+  productClone.querySelector(".product_link").href = `individual_product.html?id=${bulb._id}`;
+  productClone.querySelector(".title_product_link").href = `individual_product.html?id=${bulb._id}`;
   productParent.appendChild(productClone);
 }
 
 let index = 0;
 let moods = [
-  "assets/images/mood_relaxing.jpg",
-  "assets/images/mood_dining.jpg",
-  "assets/images/mood_partying.jpg",
-  "assets/images/mood_gaming.jpg",
-  "assets/images/mood_working.jpg",
+  "assets/images/mood_relaxing_inspiration.jpg",
+  "assets/images/mood_dining_inspiration.jpg",
+  "assets/images/mood_gaming_inspiration.jpg",
+  "assets/images/mood_working_inspiration.jpg",
 ];
 
 document.querySelector("#arrow_right").addEventListener("click", nextSlide);

@@ -71,20 +71,17 @@ video {
 }
 
 .add_to_cart {
-  background-color: var(--bg-footer);
+  border: none;
+  background-color: white;
+  box-shadow: 0 0 3px 0.01px #9ec1c2;
   font-family: var(--font);
   color: var(--main-text-color);
-  border: 1px solid #b0acac;
   font-size: 13px;
   padding: 0.3rem 1.5rem;
   border-radius: 10px;
   cursor: pointer;
   white-space: nowrap;
   margin-top: -0.2rem;
-}
-
-.add_to_cart:hover {
-  background-color: #f2f2f2;
 }
 
 h2 {
@@ -94,18 +91,11 @@ h2 {
 }
 
 .gradient {
-  margin-top: 3.5rem;
-  background: linear-gradient(
-    -45deg,
-    #3cdbc100,
-    #3cdbc15d,
-    #3cdbc0,
-    #3cdbc15d,
-    #3cdbc100
-  );
+  margin-top: 3rem;
+  background: linear-gradient(-45deg, #3cdbc100, #3cdbc15d, #3cdbc0, #3cdbc15d, #3cdbc100);
   background-size: 700% 700%;
   animation: move-bg 9s linear infinite;
-  padding: 3rem 0.5rem;
+  padding: 2rem 0.5rem;
 }
 
 @keyframes move-bg {
@@ -150,8 +140,12 @@ h2 {
 #slide {
   width: 100vw;
   max-width: 100%;
-  margin-top: -14%;
-  margin-bottom: -22%;
+  margin-top: -8%;
+  margin-bottom: -8%;
+}
+
+.set-mood {
+  margin-bottom: 2.2rem;
 }
 
 #arrow_left {
@@ -181,7 +175,7 @@ h2 {
 }
 
 .what_is_ullo {
-  margin: 4rem 2rem;
+  margin: 3rem 2rem 4rem 2rem;
 }
 
 .what_is_ullo img {
@@ -203,20 +197,17 @@ a.what {
 
 .what h4 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 17px;
+  margin: 1rem 0.5rem 2rem 0.5rem;
 }
 
 .what {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   border-radius: 35px;
   box-shadow: 0 0 14px 4px #3cdbc08a;
-  width: 130px;
-}
-
-.what:hover {
-  box-shadow: 0 0 16px 7px #3cdbc08a;
+  width: 180px;
 }
 
 .you_get img {
@@ -244,7 +235,7 @@ a.what {
 }
 
 .support {
-  margin: 4rem 0;
+  margin: 3rem 0;
 }
 
 .support > div {
@@ -280,10 +271,10 @@ a.what {
 .forest {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   gap: 3rem;
-  padding: 4rem 2rem;
+  padding: 5.5rem 3rem 3rem 3rem;
 }
 
 .forest img {
@@ -304,7 +295,7 @@ a.what {
   font-weight: 600;
 }
 
-.forest a:after {
+.forest a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -317,7 +308,7 @@ a.what {
   transition: transform 0.2s ease-out;
 }
 
-.forest a:hover:after {
+.forest a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }

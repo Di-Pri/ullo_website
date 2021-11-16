@@ -10,14 +10,15 @@
   color: #ffffff;
 }
 .hero-padding {
-  padding: 7rem;
+  padding: 7rem 15vw;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .heading {
-  font-size: 45px;
-  font-weight: 500;
+  font-size: 37px;
+  font-weight: 600;
 }
 .ullo-ani {
   display: flex;
@@ -90,14 +91,7 @@ img {
 }
 .gradient {
   margin-top: 3.5rem;
-  background: linear-gradient(
-    -45deg,
-    #3cdbc100,
-    #3cdbc15d,
-    #3cdbc0,
-    #3cdbc15d,
-    #3cdbc100
-  );
+  background: linear-gradient(-45deg, #3cdbc100, #3cdbc15d, #3cdbc0, #3cdbc15d, #3cdbc100);
   background-size: 700% 700%;
   animation: move-bg 9s linear infinite;
   padding: 3rem 0.5rem;
@@ -140,7 +134,7 @@ img {
   font-weight: 600;
 }
 
-.forest a:after {
+.forest a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -153,7 +147,7 @@ img {
   transition: transform 0.2s ease-out;
 }
 
-.forest a:hover:after {
+.forest a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -252,11 +246,6 @@ picture {
   margin-bottom: -7px;
 }
 
-.heading {
-  font-size: calc(1.2rem + 1vw);
-  font-weight: 600;
-}
-
 .text {
   font-size: calc(0.6rem + 0.5vw);
   margin-bottom: calc(1rem + 1vw);
@@ -264,10 +253,6 @@ picture {
 @media only screen and (max-width: 600px) {
   .text {
     font-size: calc(0.8rem + 0.3vw);
-  }
-
-  .heading {
-    font-size: calc(1.8rem + 0.5vw);
   }
   .btn_link {
     font-size: calc(0.9rem + 0.3vw);

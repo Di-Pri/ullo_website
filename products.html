@@ -21,79 +21,42 @@
             <li><a href="home.html">Home</a></li>
             <li class="menu_dropdown active">
               <a href="products.html">Products</a>
-              <img
-                id="menu_drop1"
-                class="hidden"
-                src="assets/icons/menu_chevron.svg"
-                alt="Icon of an arrow"
-              />
+              <img id="menu_drop1" class="hidden" src="assets/icons/menu_chevron.svg" alt="Icon of an arrow" />
               <ul class="hidden">
                 <li>
-                  <a href="individual_product.html?id=60a28f1df7c7ed16000c164a"
-                    >Glow E27</a
-                  >
+                  <a href="individual_product.html?id=60a28f1df7c7ed16000c164a">Glow E27</a>
                 </li>
                 <li>
-                  <a href="individual_product.html?id=60a29074f7c7ed16000c166f"
-                    >Spot GU10</a
-                  >
+                  <a href="individual_product.html?id=60a29074f7c7ed16000c166f">Spot GU10</a>
                 </li>
                 <li>
-                  <a href="individual_product.html?id=60a290fef7c7ed16000c1690"
-                    >Torch E14</a
-                  >
+                  <a href="individual_product.html?id=60a290fef7c7ed16000c1690">Torch E14</a>
                 </li>
                 <li>
-                  <a href="individual_product.html?id=60a291b6f7c7ed16000c16aa"
-                    >Flex strip</a
-                  >
+                  <a href="individual_product.html?id=60a291b6f7c7ed16000c16aa">Flex strip</a>
                 </li>
                 <li>
-                  <a href="individual_product.html?id=60a2926af7c7ed16000c16c3"
-                    >Remote</a
-                  >
+                  <a href="individual_product.htl?mid=60a2926af7c7ed16000c16c3">Remote</a>
                 </li>
                 <li>
-                  <a href="individual_product.html?id=60a29327f7c7ed16000c16eb"
-                    >Starter kit</a
-                  >
+                  <a href="individual_product.html?id=60a29327f7c7ed16000c16eb">Starter kit</a>
                 </li>
               </ul>
             </li>
-            <li><a href="get_started.html">Get started</a></li>
-            <li class="menu_dropdown">
-              <a href="about_ullo.html">About Ullo</a>
-              <img
-                id="menu_drop2"
-                class="hidden"
-                src="assets/icons/menu_chevron.svg"
-                alt="Icon of a downwards facing arrow"
-              />
-              <ul class="hidden">
-                <li><a href="our_story.html">Our story</a></li>
-                <li><a href="inspiration.html">Inspiration</a></li>
-                <li><a href="green_initiative.html">Green initiative</a></li>
-                <li><a href="partners.html">Our partners</a></li>
-              </ul>
-            </li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+            <li><a href="green_initiative.html">About Ullo</a></li>
           </ul>
         </div>
         <div id="menu_search">
           <img src="assets/icons/search.svg" alt="Icon of a magnifying glass" />
         </div>
-        <a class="menu_cart" href="cart.html">
+        <a class="menu_cart" href="#">
           <img src="assets/icons/cart.svg" alt="Shopping cart" />
         </a>
         <div id="hamburger" class="ham hidden"></div>
       </nav>
       <form class="search_box hidden" action="#" method="get" role="search">
-        <input
-          type="text"
-          placeholder="Type to search"
-          name="query"
-          value=""
-          required
-        />
+        <input type="text" placeholder="Type to search" name="query" value="" required />
         <button id="search_button" type="submit">
           <img src="assets/icons/search.svg" alt="Icon of a magnifying glass" />
         </button>
@@ -117,16 +80,7 @@
         </div>
       </section>
       <section class="products">
-        <div class="products_filter">
-          <h1>Our products</h1>
-          <div class="select_wrapper">
-            <select name="sort" id="sort" class="sort">
-              <option value="" selected>Sort by</option>
-              <option value="category" class="category">Category</option>
-              <!-- <option value="none">None</option> -->
-            </select>
-          </div>
-        </div>
+        <h1>Products</h1>
         <div class="products_list"></div>
       </section>
       <template class="product_template">
@@ -154,77 +108,37 @@
           <ul>
             <li><a href="#">Support</a></li>
             <li><a href="#">Privacy policy</a></li>
-            <li><a href="#">Cookie policy</a></li>
             <li><a href="#">Terms of service</a></li>
           </ul>
         </section>
         <section class="footer_subscribe">
           <h4>Newsletters</h4>
           <form action="#" class="form_subscribe">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email address"
-            />
-            <!-- <input type="submit" value="&rarr;" /> -->
+            <input type="email" name="email" id="email" placeholder="Enter your email address" />
             <button type="submit">
               <img src="assets/icons/rarr.svg" alt="submit button" />
             </button>
           </form>
         </section>
         <section class="footer_payment">
-          <img
-            src="assets/icons/google_pay.svg"
-            alt="google pay icon"
-            class="icon_payment"
-          />
-          <img
-            src="assets/icons/paypal.svg"
-            alt="paypal icon"
-            class="icon_payment"
-          />
-          <img
-            src="assets/icons/visa.svg"
-            alt="visa icon"
-            class="icon_payment"
-          />
-          <img
-            src="assets/icons/mastercard.svg"
-            alt="mastercard icon"
-            class="icon_payment"
-          />
+          <img src="assets/icons/google_pay.svg" alt="google pay icon" class="icon_payment" />
+          <img src="assets/icons/paypal.svg" alt="paypal icon" class="icon_payment" />
+          <img src="assets/icons/visa.svg" alt="visa icon" class="icon_payment" />
+          <img src="assets/icons/mastercard.svg" alt="mastercard icon" class="icon_payment" />
+        </section>
+        <section class="footer_general">
+          <p>Copyright &#169; Ullo, Powered by Shopify</p>
         </section>
         <section class="footer_social">
           <a href="https://www.facebook.com/ullo.dk/" target="_blank">
-            <img
-              src="assets/icons/Ullofacebook.png"
-              alt="facebook icon"
-              class="icon_SoMe"
-            />
+            <img src="assets/icons/Ullofacebook.png" alt="facebook icon" class="icon_SoMe" />
           </a>
           <a href="https://www.instagram.com/ullo.official/" target="_blank">
-            <img
-              src="assets/icons/Ulloinstagram.png"
-              alt="instagram icon"
-              class="icon_SoMe"
+            <img src="assets/icons/Ulloinstagram.png" alt="instagram icon" class="icon_SoMe"
           /></a>
-          <a
-            href="https://twitter.com/intent/tweet?text=&url=https%3A%2F%2Fullo.dk"
-            target="_blank"
-          >
-            <img
-              src="assets/icons/ullotwitter.png"
-              alt="twitter icon"
-              class="icon_SoMe"
+          <a href="https://twitter.com/intent/tweet?text=&url=https%3A%2F%2Fullo.dk" target="_blank">
+            <img src="assets/icons/ullotwitter.png" alt="twitter icon" class="icon_SoMe"
           /></a>
-        </section>
-        <section class="footer_general">
-          <p>
-            Copyright &#169; Ullo, Powered by Shopify <br />
-            Nørrebrogade 225 5, 2200 København N &nbsp; CVR: 41797584 <br />
-            <a href="mailto:hej@ullo.dk">hej@ullo.dk</a>
-          </p>
         </section>
       </div>
       <section class="modal_subscribe" id="modal_subscribe">
