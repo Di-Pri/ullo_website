@@ -224,7 +224,6 @@ h2 {
 
 #arrow_left {
   position: absolute;
-  transform: rotate(180deg);
   width: 41px;
   left: 13px;
   top: 45%;
@@ -235,6 +234,7 @@ h2 {
 
 #arrow_right {
   position: absolute;
+  transform: rotate(180deg);
   width: 41px;
   right: 13px;
   top: 45%;

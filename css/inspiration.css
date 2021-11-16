@@ -11,7 +11,7 @@ main {
   font-size: 37px;
   font-weight: 600;
   color: #eee8e8;
-  padding: 5rem 1rem 0 1rem;
+  padding: 5rem 15vw 0 15vw;
   text-align: center;
 }
 
@@ -38,7 +38,8 @@ main {
   margin: auto;
   color: #eee8e8;
   font-size: calc(0.6rem + 0.5vw);
-  padding-bottom: 4rem;
+  padding: 0 15vw 4rem 15vw;
+  text-align: center;
 }
 
 .instagram_gallery {
